@@ -28,6 +28,15 @@ h2 {
   padding: 1.5em;
 }
 
+header {
+  background-color: #e9e9e9;
+  padding-bottom: 1em;
+}
+
+main {
+  padding: 2em 1em;
+}
+
 footer {
   border-top: 1px solid lightgrey;
   background-color: #e9e9e9;
@@ -37,10 +46,6 @@ footer {
   justify-content: space-around;
 }
 
-main {
-  padding: 2em 1em;
-}
-
 /* Container */
 
 .main-header {
@@ -48,52 +53,47 @@ main {
   text-align: center;
 }
 
-.nav-container {
-  padding: 1em;
-}
-
-.about {
-  padding: 1em;
-}
-
-
-
 .contact {
   padding: 2em 1em;
   background-color: #e9e9e9;
 }
 
-/* Class */
+/* Class Selector */
 
-.name {
-  padding: 0.3em;
-  margin: 0;
+.main-nav h1 {
+  padding-top: 1em;
+  margin-top: 0;
+  font-size: 2em;
 }
 
 .main-nav li {
-  background-color: white;
   margin: 0.5em;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.photo {
-  width: 100%;
-  padding: 2em;
+.main-nav a {
+  display: block;
 }
 
-.about p {
-  color: #5a5a5a;
-  padding: 0.5em 0;
-  margin: 0;
+.profile {
+  padding: 1em;
+}
+
+.profile p {
+  font-size: 1.1em;
+}
+
+.profile-picture {
+  margin: 1.5em;
+}
+
+main h2 {
+  margin: 2em 0 2em 0;
 }
 
 main img {
   width: 100%;
-}
-
-.main-content h3 {
-  margin-bottom: 0;
 }
 
 .footer-nav {
@@ -110,3 +110,103 @@ footer h3 {
 }
 
 /* Viewport */
+
+@media (min-width: 768px) {
+  .main-nav ul {
+    display: inline-flex;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3em 1.5em;
+  }
+
+  .profile-picture {
+    width: 40%;
+    padding: 0;
+  }
+
+  .profile p {
+    font-size: 1.25em;
+    margin: 0;
+    padding-right: 1em;
+    text-align: left;
+  }
+
+  .card {
+    width: 45%;
+    margin: 1em;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card p {
+    padding: 0 1.5em;
+  }
+
+  .contact p {
+    margin: 2em 6em;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-nav ul {
+    display: block;
+    list-style-type: none;
+  }
+
+  .footer-nav li {
+    display: inline;
+    padding-left: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .top {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1.25em 0 1.25em;
+  }
+
+  .main-nav h1 {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .profile {
+    margin: 3em 1.25em;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .contact p {
+    margin: 2em 13em;
+  }
+}
+
+/* clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
