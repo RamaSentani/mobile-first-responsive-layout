@@ -13,16 +13,19 @@
 <body>
 
   <header>
-    <h1>Rama Sentani</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="about">
-      <img class="about-photo" src="images/responsive-layout-profile.png" alt="Profile Picture" />
+    <div class="main-nav" id="top">
+      <h1>Rama Sentani</h1>
+      <nav>
+        <ul>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="profile clearfix">
+      <img class="profile-picture" src="images/responsive-layout-profile.png" alt="Profile Picture" />
       <p>
         Hi! I'm a college student who loves resposive design and css. I currently doing a degree in front-end web
         development at Treehose and am excited to learn new skills!
@@ -31,53 +34,55 @@
   </header>
 
   <main>
-    <h2>Portfolio</h2>
-    <section class="card">
-      <img src="images/portfolio-1.png" alt="Image of portfolio 1">
-      <h3>Marketing Page</h3>
-      <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-    </section>
-
-    <section class="card">
-      <img src="images/portfolio-2.png" alt="Image of portfolio 2">
-      <h3>Search Page</h3>
-      <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-    </section>
-
-    <section class="card">
-      <img src="images/portfolio-3.png" alt="Image of portfolio 3">
-      <h3>Travel App</h3>
-      <p>This project compares travel times vased on different transportation methods and tells you the best one.</p>
-    </section>
-
-    <section class="card">
-      <img src="images/portfolio-4.png" alt="Image of portfolio 4">
-      <h3>Map of Favorite Spots</h3>
-      <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking
-        tour.</p>
-    </section>
-
-    <section class="card">
-      <img src="images/portfolio-5.png" alt="Image of portfolio 5">
-      <h3>Photo Gallery</h3>
-      <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through
-        pohotos.</p>
-      </div>
+    <h2 id="portfolio">Portfolio</h2>
+    <div class="card-container">
+      <section class="card">
+        <img src="images/portfolio-1.png" alt="Image of marketing page">
+        <h3>Marketing Page</h3>
+        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      </section>
 
       <section class="card">
-        <img src="images/portfolio-6.png" alt="Image of portfolio 6">
+        <img src="images/portfolio-2.png" alt="Image of search page">
+        <h3>Search Page</h3>
+        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      </section>
+
+      <section class="card break">
+        <img src="images/portfolio-3.png" alt="Image of travel app">
+        <h3>Travel App</h3>
+        <p>This project compares travel times vased on different transportation methods and tells you the best one.</p>
+      </section>
+
+      <section class="card">
+        <img src="images/portfolio-4.png" alt="Image of map of my favorite spots">
+        <h3>Map of Favorite Spots</h3>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking
+          tour.</p>
+      </section>
+
+      <section class="card">
+        <img src="images/portfolio-5.png" alt="Image of photo gallery">
+        <h3>Photo Gallery</h3>
+        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through
+          pohotos.</p>
+      </section>
+
+      <section class="card break">
+        <img src="images/portfolio-6.png" alt="Image of calculator">
         <h3>Calculator</h3>
         <p>Someone can enter in the numbers they want, and press the big blue button and het the result.</p>
       </section>
+    </div>
   </main>
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <h2>Contact</h2>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from
       you!</p>
     <div class="contact-info">
       <p>Phone <strong>+1(111) 555-1234</strong></p>
-      <p>Email <strong><a href="mailto:email@yoursite.com">email@yoursite.com</a></strong></p>
+      <p>Email <strong><a href="mailto:sentanirama@protonmail.com">sentanirama@protonmail.com</a></strong></p>
     </div>
   </div>
 
